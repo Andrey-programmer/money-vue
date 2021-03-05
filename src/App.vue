@@ -7,6 +7,7 @@
 <script>
   import AuthLayout from '@/layouts/AuthLayout'
   import MainLayout from '@/layouts/MainLayout'
+
   export default {
     components: {
       AuthLayout,
@@ -14,8 +15,7 @@
     },
     computed: {
       layout() {
-        // console.log(this.$route.meta.layout)
-        return this.$route.meta.layout || 'authLayout'
+        return this.$route.meta.layout || 'auth-layout' //authLayout
       }
     }
   }
